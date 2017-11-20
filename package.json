@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/TSSaint/react-weather/issues"
   },
-  "homepage": "https://github.com/TSSaint/react-weather#readme"
+  "homepage": "https://github.com/TSSaint/react-weather#readme",
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "classnames": "^2.2.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-react": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "node-notifier": "^5.1.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0",
+    "whatwg-fetch": "^2.0.3"
+  }
 }
