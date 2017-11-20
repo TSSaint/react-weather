@@ -11,4 +11,19 @@ Technologies:
 -
 
 NPM Packages:
--
+-browserify 
+-classnames 
+-gulp 
+-gulp-concat 
+-gulp-react 
+-gulp-sass 
+-gulp-server-livereload -
+gulp-util 
+-gulp-watch 
+-node-notifier 
+-react 
+-react-dom 
+-reactify 
+-vinyl-source-stream 
+-watchify 
+-whatwg-fetch

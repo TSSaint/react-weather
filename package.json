@@ -1,0 +1,19 @@
+{
+  "name": "reactweather",
+  "version": "1.0.0",
+  "description": "A weather app built with React.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSSaint/react-weather.git"
+  },
+  "author": "T. Sebi Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSSaint/react-weather/issues"
+  },
+  "homepage": "https://github.com/TSSaint/react-weather#readme"
+}
