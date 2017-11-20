@@ -37,3 +37,27 @@ var notify = function(error){
 // create a Browserify bundler
 // add a transformer that takes JSX and reads in JS
 // bundle into root of main.js
+
+var bundler = watchify(browserify({
+  entries: ['./src/app.jsx'],
+  transform: [reactify],
+  extensions: ['.jsx'],
+  debug: true,
+  cache: {},
+  packageCache: {},
+  fullPaths: true
+}));
+
+function bundle(){
+  return bundler
+    .bundle()
+    .on('error', notify)
+    .pipe(source('main.js'))
+    .pipe(gulp.dest('./'))
+}
+bundler.on('update', bundle);
+
+// the bundler
+gulp.task('build', function(){
+  bundle()
+});
