@@ -18,3 +18,14 @@ var Weather = React.createClass({
 // assign React component Weather to a DOM element
 var element = React.createElement(Weather, {});
 ReactDOM.render(element, document.querySelector('.container'));
+
+// Initialize data for UI
+// prepare props to hold values for weather indicators
+getInitialState: function(){
+	return {
+		weather: '',
+		temp: 0,
+		humidity,
+		wind: 0
+	}
+},

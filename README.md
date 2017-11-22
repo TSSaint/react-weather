@@ -8,7 +8,8 @@ Features:
 -Loads multiple cities for updating weather
 
 Technologies:
--
+-Node.js
+-React.js
 
 NPM Packages:
 -browserify 
