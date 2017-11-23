@@ -35,6 +35,17 @@ var Weather = React.createClass({
     	    }.bind(this));
     	}
 	},
+
+	updateData: function(){
+		// update content for UI
+		this.setState({
+			weather: citiesWeather[currentCity].weather[0].id,
+			// K to F -> F = 9/5(K - 273) + 32
+			temp: Math.round(citiesWeather[currentCity].main.temp),
+			humidity: Math.round(citiesWeather[currentCity].main.humidity),
+			wind: Math.round(citiesWeather[currentCity].wind.speed)
+		});
+	},
 	
 	render: function(){
 		// class names
