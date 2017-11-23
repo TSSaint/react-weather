@@ -10,6 +10,17 @@ var citiesWeather = []; // API cache
 var currentCity = 0; // Index of current city displayed
 
 var Weather = React.createClass({
+	// Initialize data for UI
+	// prepare props to hold values for weather indicators
+	getInitialState: function(){
+	return {
+		weather: '',
+		temp: 0,
+		humidity,
+		wind: 0
+		}
+	},
+	
 	render: function(){
 	// class names
 	var weatherClass = classNames('wi wi-owm-' + this.state.weather);
@@ -31,7 +42,7 @@ var Weather = React.createClass({
 	else if (this.state.temp <= 0){
 		bgColorClass += 'very-cold';
 	}
-
+	
 	// render DOM elements
 	return 
 	<div className={bgColorClass}>
@@ -39,11 +50,11 @@ var Weather = React.createClass({
 		<div className="weather">
 			<i className={weatherClass}></i>
 		</div>
-		<section className="weather-details">
-			<div className="temp"><span className="temp-number">{this.state.temp}</span><span className="wi wi-degrees"></span></div>
-			<div className="humidity"><i className="wi wi-raindrop"></i>{this.state.humidity} %</div>
-        	<div className="wind"><i className="wi wi-small-craft-advisory">{this.state.wind} <span className="vel">Km/h</span></div>
-		</section>
+	<section className="weather-details">
+		<div className="temp"><span className="temp-number">{this.state.temp}</span><span className="wi wi-degrees"></span></div>
+		<div className="humidity"><i className="wi wi-raindrop"></i>{this.state.humidity} %</div>
+		<div className="wind"><i className="wi wi-small-craft-advisory"></i>{this.state.wind} <span className="vel">Km/h</span></div>
+	</section>
 	</div>
 
 	}
@@ -52,14 +63,3 @@ var Weather = React.createClass({
 // assign React component Weather to a DOM element
 var element = React.createElement(Weather, {});
 ReactDOM.render(element, document.querySelector('.container'));
-
-// Initialize data for UI
-// prepare props to hold values for weather indicators
-getInitialState: function(){
-	return {
-		weather: '',
-		temp: 0,
-		humidity,
-		wind: 0
-	}
-},
