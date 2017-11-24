@@ -10,6 +10,7 @@ Features:
 Technologies:
 -Node.js
 -React.js
+-(tbi)
 
 NPM Packages:
 -browserify 
@@ -27,4 +28,5 @@ gulp-util
 -reactify 
 -vinyl-source-stream 
 -watchify 
--whatwg-fetch
+-whatw
+-fetch
