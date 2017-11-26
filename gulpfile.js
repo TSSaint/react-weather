@@ -62,6 +62,7 @@ gulp.task('build', function(){
   bundle()
 });
 
+// could use nodemon instead?
 // setup a live reloading server
 // checks compiled CSS + JS files before reloading
 gulp.task('serve', function(done){
