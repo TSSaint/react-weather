@@ -62,6 +62,14 @@ gulp.task('build', function(){
   bundle()
 });
 
+// compile sass from main.scss
+gulp.task('sass', function() {
+  gulp.src('./sass/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('./'));
+});
+
 // could use nodemon instead?
 // setup a live reloading server
 // checks compiled CSS + JS files before reloading
