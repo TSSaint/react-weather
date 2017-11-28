@@ -13,22 +13,22 @@ This is a weather app built with React.
 -(tbi)<br>
 
 ### NPM Packages:
--browserify 
--classnames 
--gulp 
--gulp-concat 
--gulp-react 
--gulp-sass 
--gulp-server-livereload -
-gulp-util 
--gulp-watch 
--node-notifier 
--react 
--react-dom 
--reactify 
--vinyl-source-stream 
--watchify 
--whatw
--fetch
+<br>-browserify 
+<br>-classnames 
+<br>-gulp 
+<br>-gulp-concat 
+<br>-gulp-react 
+<br>-gulp-sass 
+<br>-gulp-server-livereload 
+<br>-gulp-util 
+<br>-gulp-watch 
+<br>-node-notifier 
+<br>-react 
+<br>-react-dom 
+<br>-reactify 
+<br>-vinyl-source-stream 
+<br>-watchify 
+<br>-whatw
+<br>-fetch
 
-! createClass function has been deprecated
+NOTE: createClass function has been deprecated. Need to fix with another npm package. 
