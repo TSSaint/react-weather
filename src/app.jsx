@@ -46,6 +46,38 @@ var Weather = React.createClass({
 			wind: Math.round(citiesWeather[currentCity].wind.speed)
 		});
 	},
+
+	// execute this before render
+	componentWillMount: function(){
+		// Get query string data
+		query = location.search.split('=')[1];
+
+		// check whether or not to display more than one city's weather
+		if (query !== underfined){
+			cities = query.split(','); // array of citynames
+
+			// load new cities in interval
+			if (cities.length > 1){
+				setInterval((function(){
+					currentCity++;
+					if(currentCity === cities.length){
+						currentCity = 0;
+					}
+					this.fetchData(); // reload every 5 sec
+				}).bind(this), 5000);
+			}
+		}
+		else {
+			cities[0] = 'New York City'; // NYC is default
+		}
+
+		// timer that clears the cache and gets updated data from API 
+		setInterval(function(){
+			citiesWeather = []; // empty the cache
+		}, (1000*60*1));
+
+		this.fetchData();
+	},
 	
 	render: function(){
 		// class names
