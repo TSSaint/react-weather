@@ -1,18 +1,18 @@
 # react-weather
 This is a weather app built with React.
 
-Features:<br>
+### Features:<br>
 -Displays city data like temperature, wind speed, humidity<br>
 -Changes colors dynamically according to temperature<br>
 -Works in all devices<br>
 -Loads multiple cities for updating weather<br>
 
-Technologies:<br>
+### Technologies:<br>
 -Node.js<br>
 -React.js<br>
 -(tbi)<br>
 
-NPM Packages:
+### NPM Packages:
 -browserify 
 -classnames 
 -gulp 
@@ -30,3 +30,5 @@ gulp-util
 -watchify 
 -whatw
 -fetch
+
+! createClass function has been deprecated
