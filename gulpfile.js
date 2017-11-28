@@ -82,3 +82,11 @@ gulp.task('serve', function(done){
       open: true
     }));
 });
+
+// look for changes in SASS
+gulp.task('watch', function(){
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
+// run tasks in this order
+gulp.task('default', ['build', 'serve', 'sass', 'watch']);
